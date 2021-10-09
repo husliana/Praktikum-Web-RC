@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Institut Teknologi Sumatera</title>
+    <style type="text/css">
+        #scroll-btn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 15px;
+                border: none;
+                outline: none;
+                background-color:cornflowerblue;
+                color:lemonchiffon;
+                cursor: pointer;
+                padding: 15px 19px;
+                border-radius: 100px;
+            }
+            
+            #scroll-btn:hover {
+                background-color: mediumturquoise;
+            }
+    </style>
+</head>
+
+<body bgcolor="#cdd">
+    <header>
+        <img src="https://www.itera.ac.id/wp-content/uploads/2019/02/logo_itera_bulet_head.png" style="float:right;" width="115" height="115"/>
+        <font size="6"><center><br><strong>Institut Teknologi Sumatera</strong></center></font><br>
+    </header><hr>
+    <nav>
+        <ul>
+            <li><a href="https://www.itera.ac.id/tentang-institut-teknologi-sumatera/">About</a></li>
+            <li><a href="https://www.itera.ac.id/jurusanitera/">Jurusan</a></li>
+            <li><a href="https://www.itera.ac.id/bidikmisi/">Beasiswa Bidikmisi</a></li>
+            <a></a>
+        </ul>
+    </nav>
+    <br>
+
+    <center>
+        <img src="https://www.itera.ac.id/wp-content/uploads/2020/01/labtek-2-2-1024x576.jpg">
+    </center>
+
+    <article>
+        <p align="justify"><font size="3">
+            Institut Teknologi Sumatera disingkat ITERA, adalah sebuah perguruan tinggi negeri yang terdapat di Provinsi Lampung di Pulau Sumatra.
+            Lokasinya berada di antara wilayah Kabupaten Lampung Selatan dengan Kota Bandar Lampung.
+            ITERA didirikan berdasarkan Peraturan Presiden Nomor 124 Tahun 2014 tentang Pendirian Institut Teknologi Sumatera (Lembaran Negara Republik Indonesia Tahun 2014 Nomor 253) 
+            yang ditetapkan Presiden Republik Indonesia Dr. H. Susilo Bambang Yudhoyono pada tanggal 6 Oktober 2014 dan diundangkan tanggal 9 Oktober 2014. 
+            Walaupun peresmiannya dilaksanakan pada tahun 2014, tetapi ITERA sudah memulai kegiatan akademik dengan menerima mahasiswa baru sejak tahun 2012-2013. 
+            Selain ITB dan ITS, dengan dibukanya ITERA dan ITK, maka pemerintah Indonesia memiliki empat institut teknologi. 
+            Dalam konteks strategi utama pelaksanaan Masterplan Percepatan dan Perluasan Pembangunan Ekonom Indonesia (MP3EI), peran sumberdaya manusia yang berpendidikan menjadi kunci utama dalam mendukung pertumbuhan ekonomi yang berkesinambungan. 
+            Oleh karena itu, tujuan utama di dalam sistem pendidikan dan pelatihan untuk mendukung hal tersebut di atas haruslah bisa menciptakan sumberdaya manusia yang mampu beradaptasi dengan cepat terhadap perkembangan sains dan teknologi. 
+            Upaya percepatan pembangunan nasional, khususnya dalam bidang sains, teknologi dan seni, memerlukan kesiapan penyediaan sumberdaya manusia yang unggul. 
+            Untuk itu, Kementerian Pendidikan dan Kebudayaan memiliki program pendirian institut teknologi negeri di Pulau Sumatra.
+        </p></font>
+    </article>
+    <br><hr>
+
+    <form method="GET">
+        <fieldset>
+        <legend>Form Pengunjung</legend>
+        <p>
+            <label>Nama :</label>
+            <input type="text" name="nama"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email"/>
+        </p>
+        <p>
+            <label>Kritik dan Saran :</label>
+            <textarea name="kritik"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" />
+        </p>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p><font size="2">
+            <button onclick="topFunction()" id="scroll-btn" title="Top">&uarr;</button> 
+            copyright @ 2021 Husliana Pratiwi 
+        </p></font>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+             
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-btn").style.display = "block";
+              } else {
+                document.getElementById("scroll-btn").style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
+    </footer>
+</body>
