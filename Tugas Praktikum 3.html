@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Praktikum Minggu 3</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <label>Pilih Tema : </label>
+    <select id="tema" onclick="theme()">
+		<option value="white">White</option>
+		<option value="black">Black</option>
+        <option value="blue">Blue</option>
+	</select>
+
+    <header>
+        <h1>This is my website</h1>
+    </header>
+
+    <label>Status kamu apa nih?</label>
+    <select id="status" onclick="status()">
+		<option value="jombs">Jomblo</option>
+		<option value="taken">Punya Pacar</option>
+		<option value="gantung">HTS</option>
+	</select>
+    <p id="output"></p>
+
+    <p>Input number :
+        <input type="number" id="angka">
+        <input type="submit" value="Get Factorial" onclick="faktorial()">
+    </p>
+    <p id="teks2"></p>
+
+    <script type="text/javascript">
+        function theme() {
+            var Tema = document.getElementById('tema').value;
+            if (Tema == "black") {
+                document.body.style.background = "black";
+                document.body.style.color = "white";
+            } else if (Tema == "white") {
+                document.body.style.background = "white";
+                document.body.style.color = "black";
+            } else {
+                document.body.style.background = "blue";
+                document.body.style.color = "white";
+            }
+        }
+
+        function status() {
+            var stat = document.getElementById("status").value;
+
+            var keluaran = "";
+            if (stat == "jombs") {
+                keluaran = "Sama sama jomblo nih, bisa lah yaaaa";
+            } else if (stat == "taken") {
+                keluaran = "Kasih tips biar dapet pacar dong kaka :)";
+            } else if (stat == "gantung") {
+                keluaran = "Mari sudahi overthinkingmu kawand";
+            }
+            document.getElementById("output").innerHTML = keluaran;
+        }
+
+        function faktorial() {
+            var angka = document.getElementById("angka").value;
+            var hasil = 1;
+
+            var i = angka;
+            while (i != 0) {
+                hasil = hasil * i;
+                i--;
+            }
+            document.getElementById("teks2").innerHTML = "Hasil faktorial dari " + angka + " " + "adalah " + hasil;
+        }
+    </script>
+</body>
+
+</html>
